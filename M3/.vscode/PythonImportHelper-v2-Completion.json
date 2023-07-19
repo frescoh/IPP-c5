@@ -1,0 +1,145 @@
+[
+    {
+        "label": "numeros",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numeros",
+        "description": "numeros",
+        "detail": "numeros",
+        "documentation": {}
+    },
+    {
+        "label": "es_primo",
+        "importPath": "numeros",
+        "description": "numeros",
+        "isExtraImport": true,
+        "detail": "numeros",
+        "documentation": {}
+    },
+    {
+        "label": "sistema_operativo",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sistema_operativo",
+        "description": "sistema_operativo",
+        "detail": "sistema_operativo",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "promedio",
+        "kind": 2,
+        "importPath": "TP 9.Ejercicio1",
+        "description": "TP 9.Ejercicio1",
+        "peekOfCode": "def promedio(*args:float)->float:\n    \"\"\"\n    Calcula el promedio de los numeros ingresados \n    Returns:\n        _float_: suma de los numeros/ cantidad de numeros. 0 si la cantidad de numeros ingresados es 0\n    \"\"\"\n    if len(args) ==0:\n        return 0\n    else:\n        return sum(args)/len(args)",
+        "detail": "TP 9.Ejercicio1",
+        "documentation": {}
+    },
+    {
+        "label": "promedio",
+        "kind": 2,
+        "importPath": "TP 9.Ejercicio1_bis",
+        "description": "TP 9.Ejercicio1_bis",
+        "peekOfCode": "def promedio(lista):\n    \"\"\"\n    Calcula el promedio de los numeros ingresados \n    Returns:\n        _float_: suma de los numeros/ cantidad de numeros. 0 si la cantidad de numeros ingresados es 0\n    \"\"\"\n    if len(lista) ==0:\n        return 0\n    else:\n        return sum(lista)/len(lista)",
+        "detail": "TP 9.Ejercicio1_bis",
+        "documentation": {}
+    },
+    {
+        "label": "operacion",
+        "kind": 2,
+        "importPath": "TP 9.Ejercicio2",
+        "description": "TP 9.Ejercicio2",
+        "peekOfCode": "def operacion(operador,*args):\n    resultado=0\n    if operador == '+':\n        return operacion_lista(suma,args,0)     \n    elif operador == '*':\n        return operacion_lista(producto,args,1) \n    elif operador == '-':\n        return operacion_lista(resta,args,2*args[0])\n    elif operador == '//':\n        return operacion_lista(div_ent,args,args[0]**2)",
+        "detail": "TP 9.Ejercicio2",
+        "documentation": {}
+    },
+    {
+        "label": "div_ent",
+        "kind": 2,
+        "importPath": "TP 9.Ejercicio2",
+        "description": "TP 9.Ejercicio2",
+        "peekOfCode": "def div_ent(a,b):\n    \"\"\"\n    Si b es 0, devuelve a\n    Args:\n        a (int): _description_\n        b (int): Distinto de cero\n    Returns:\n        int: a//b  Si b es 0, devuelve a\n    \"\"\"\n    if b!=0:",
+        "detail": "TP 9.Ejercicio2",
+        "documentation": {}
+    },
+    {
+        "label": "resta",
+        "kind": 2,
+        "importPath": "TP 9.Ejercicio2",
+        "description": "TP 9.Ejercicio2",
+        "peekOfCode": "def resta(a,b):\n    return a-b\ndef suma(a,b):\n    return a+b\ndef producto(a,b):\n    return a*b\ndef operacion_lista(funcion,lista,neutro):\n    salida=neutro\n    for numero in lista:\n        salida= funcion(salida,numero)",
+        "detail": "TP 9.Ejercicio2",
+        "documentation": {}
+    },
+    {
+        "label": "suma",
+        "kind": 2,
+        "importPath": "TP 9.Ejercicio2",
+        "description": "TP 9.Ejercicio2",
+        "peekOfCode": "def suma(a,b):\n    return a+b\ndef producto(a,b):\n    return a*b\ndef operacion_lista(funcion,lista,neutro):\n    salida=neutro\n    for numero in lista:\n        salida= funcion(salida,numero)\n    return salida\nprint(operacion('//',12,5,2,7))",
+        "detail": "TP 9.Ejercicio2",
+        "documentation": {}
+    },
+    {
+        "label": "producto",
+        "kind": 2,
+        "importPath": "TP 9.Ejercicio2",
+        "description": "TP 9.Ejercicio2",
+        "peekOfCode": "def producto(a,b):\n    return a*b\ndef operacion_lista(funcion,lista,neutro):\n    salida=neutro\n    for numero in lista:\n        salida= funcion(salida,numero)\n    return salida\nprint(operacion('//',12,5,2,7))",
+        "detail": "TP 9.Ejercicio2",
+        "documentation": {}
+    },
+    {
+        "label": "operacion_lista",
+        "kind": 2,
+        "importPath": "TP 9.Ejercicio2",
+        "description": "TP 9.Ejercicio2",
+        "peekOfCode": "def operacion_lista(funcion,lista,neutro):\n    salida=neutro\n    for numero in lista:\n        salida= funcion(salida,numero)\n    return salida\nprint(operacion('//',12,5,2,7))",
+        "detail": "TP 9.Ejercicio2",
+        "documentation": {}
+    },
+    {
+        "label": "es_primo",
+        "kind": 2,
+        "importPath": "numeros",
+        "description": "numeros",
+        "peekOfCode": "def es_primo(num):\n    \"\"\"Calcula si un numero es primo. Responde True o False.\"\"\"\n    cant = 0\n    divisor = 2\n    while divisor < num:\n        if num % divisor == 0:\n            cant = cant + 1\n        divisor = divisor + 1\n    if cant > 0:\n        return False",
+        "detail": "numeros",
+        "documentation": {}
+    },
+    {
+        "label": "es_par",
+        "kind": 2,
+        "importPath": "numeros",
+        "description": "numeros",
+        "peekOfCode": "def es_par(num):\n  \"\"\"Calcula si un numero es par. Responde True o False\"\"\"\n  return num % 2 == 0",
+        "detail": "numeros",
+        "documentation": {}
+    },
+    {
+        "label": "PI",
+        "kind": 5,
+        "importPath": "numeros",
+        "description": "numeros",
+        "peekOfCode": "PI = 3.141592   # definimos una variable\ndef es_primo(num):\n    \"\"\"Calcula si un numero es primo. Responde True o False.\"\"\"\n    cant = 0\n    divisor = 2\n    while divisor < num:\n        if num % divisor == 0:\n            cant = cant + 1\n        divisor = divisor + 1\n    if cant > 0:",
+        "detail": "numeros",
+        "documentation": {}
+    },
+    {
+        "label": "limpiar_pantalla",
+        "kind": 2,
+        "importPath": "sistema_operativo",
+        "description": "sistema_operativo",
+        "peekOfCode": "def limpiar_pantalla():\n    os.system(\"cls\")\nlp : os.system(\"cls\")",
+        "detail": "sistema_operativo",
+        "documentation": {}
+    }
+]
