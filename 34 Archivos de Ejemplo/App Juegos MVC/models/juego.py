@@ -11,5 +11,7 @@ class Juego:
     @classmethod
     def cargar_de_json(cls, archivo):
         with open(archivo, "r") as f:
-            data = json.load(f)
+            data = json.load(f)    
         return [cls(**juego) for juego in data]
+        
+        
